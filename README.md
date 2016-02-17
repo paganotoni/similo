@@ -1,6 +1,8 @@
 ## Similo
 
-This is a very simple library that provides similarity check between strings, there are 3 functions that allow users to check similarity between strings:
+This is a very simple library that provides similarity check between strings, This is aimed to be used to identify text in contexts like OCR input where you want to look for a string inside, but given that its OCR'd you need to permit a possible deviation on the search.
+
+There are 3 functions that allow users to check similarity between strings:
 
 ```go
 SimilarityBetween(first, second string )
