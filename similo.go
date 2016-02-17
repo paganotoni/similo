@@ -4,7 +4,7 @@ import "strings"
 
 // FindSimilarity returns a number between 0 and 1 that represents
 // the similarity between 2 strings.
-func FindSimilarity(first, second string) float64 {
+func SimilarityBetween(first, second string) float64 {
 	if first == second {
 		return 1.0
 	}

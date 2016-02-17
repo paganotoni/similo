@@ -16,10 +16,10 @@ func TestSimilar(t *testing.T) {
 }
 
 func TestDifferentSizes(t *testing.T) {
-	assert.NotEqual(t, FindSimilarity("hola", "hola mundo"), 1.0)
-	assert.Equal(t, FindSimilarity("hola", "hola mundo"), 0.4)
-	assert.NotEqual(t, FindSimilarity("hola mundo", "hola"), 1.0)
-	assert.Equal(t, FindSimilarity("hola mundo", "hola"), 0.4)
+	assert.NotEqual(t, SimilarityBetween("hola", "hola mundo"), 1.0)
+	assert.Equal(t, SimilarityBetween("hola", "hola mundo"), 0.4)
+	assert.NotEqual(t, SimilarityBetween("hola mundo", "hola"), 1.0)
+	assert.Equal(t, SimilarityBetween("hola mundo", "hola"), 0.4)
 }
 
 func TestFindSimilars(t *testing.T) {
